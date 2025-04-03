@@ -32,7 +32,9 @@ bash
 *Example:*
 
 bash
+```
 ./vm-bringup.sh vm1 10.0.12.11/24 10.0.12.254 vlan.10 8.8.8.8,8.8.4.4 ubuntu mypassword -up
+```
 
 If -up is provided, the VM will be auto-defined with virsh define and started with virsh start.
 
@@ -45,8 +47,9 @@ Destroys and undefines all VMs whose names start with vm.
 *Usage:*
 
 bash
+```
 ./vm-down.sh
-
+```
 
 *Example Output:*
 
@@ -71,8 +74,9 @@ Creates multiple VMs in a loop by calling vm-bringup.sh.
 *Usage:*
 
 bash
+```
 ./vm-batch.sh <number-of-vms>
-
+```
 
 *Example:*
 

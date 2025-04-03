@@ -2,8 +2,6 @@ Simple Bash scripts to automate the creation, configuration, startup, shutdown, 
 
 ---
 
-## 📁 Scripts Overview
-
 ### 1. vm-bringup.sh
 
 Creates and configures a single VM based on a master image which you should have already downloaded and positioned into /var/lib/libvirt/images/ already. All my testing here is based on using a specific ubuntu cloud image. Yes, I could use cloud-init here but this just quick for testing. 

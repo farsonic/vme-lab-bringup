@@ -107,7 +107,7 @@ You can modify:
 
 ## 🧹 Cleanup
 
-To stop and undefine all vmX VMs:
+To stop and undefine all vmX VMs: Note---> This will stop and delete any VM's that have a name that starts with "vm" !!!! 
 
 bash
 ./vm-down.sh
@@ -115,15 +115,5 @@ bash
 
 ---
 
-## 📄 License
 
-MIT License. Free to use, modify, and distribute.
-
----
-
-## 🤝 Contributions
-
-Feel free to open issues or submit pull requests for enhancements like:
-- Dynamic XML templating
-- IPAM support
 - Cloud-init integration

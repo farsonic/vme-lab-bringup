@@ -83,7 +83,7 @@ Creates:
 - vm2 → 10.0.12.12
 - vm3 → 10.0.12.13
 
-> The script uses default values for gateway, DNS, username, password, and base image name. You can edit these at the top of vm-batch.sh.
+> The script uses default values for gateway, DNS, username, password, and base image name. You can edit these at the top of vm-bulk.sh.
 
 ---
 

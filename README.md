@@ -54,15 +54,6 @@ bash
 ./vm-down.sh
 ```
 
-*Example Output:*
-
-🛑 Destroying running VM: vm1
-🧹 Undefining VM: vm1
-🛑 Destroying running VM: vm2
-🧹 Undefining VM: vm2
-✅ All matching VMs destroyed and undefined.
-
-
 ---
 
 ### 3. vm-bulk.sh

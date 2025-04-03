@@ -15,7 +15,12 @@ sudo wget -P /var/lib/libvirt/images/ https://cloud-images.ubuntu.com/releases/f
 mv /var/lib/libvirt/images/ubuntu-20.04-server-cloudimg-amd64-disk-kvm.img /var/lib/libvirt/images/master.img
 ```
 
+Also, you will need to have the VLAN sub-interface defined on a physical interface. So, for example I have an interface called bond1 then I create a new vlan interface using the following command. The underlying physical interface will need to be 'Up' and connected to a switch port that is configured as a trunk. 
 
+```
+ip link add link bond1 vlan.13 type vlan id 13
+ip link set up dev vlan.13
+```
 
 *Features:*
 - Copies a master image to create a new VM disk.
@@ -104,25 +109,10 @@ Creates:
 ---
 
 ## 🔧 Customization
-
 You can modify:
-- Base IP and subnet in vm-batch.sh
-- Default username/password
+- Base IP and subnet in vm-bulk.sh
+- Default username/password (I typically set the root user for quick testing) 
 - Network interface name (e.g., vlan.10)
 - Memory/vCPU or XML template in vm-bringup.sh
-
 ---
 
-## 🧹 Cleanup
-
-To stop and undefine all vmX VMs: Note---> This will stop and delete any VM's that have a name that starts with "vm" !!!! 
-
-bash
-```
-./vm-down.sh
-```
-
----
-
-
-- Cloud-init integration

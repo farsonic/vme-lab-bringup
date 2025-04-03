@@ -1,6 +1,4 @@
-![image](https://github.com/user-attachments/assets/34fb6229-b8f9-4709-8229-959fd6f7edef)# KVM Virtual Machine Automation Scripts
-
-This repository provides simple Bash scripts to automate the creation, configuration, startup, shutdown, and cleanup of KVM virtual machines using libvirt and macvtap (macvlan) networking.
+Simple Bash scripts to automate the creation, configuration, startup, shutdown, and cleanup of KVM virtual machines using libvirt and macvtap (macvlan) networking.
 
 ---
 

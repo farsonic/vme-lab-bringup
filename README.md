@@ -62,7 +62,7 @@ bash
 
 ---
 
-### 3. vm-batch.sh
+### 3. vm-bulk.sh
 
 Creates multiple VMs in a loop by calling vm-bringup.sh.
 
@@ -75,13 +75,13 @@ Creates multiple VMs in a loop by calling vm-bringup.sh.
 
 bash
 ```
-./vm-batch.sh <number-of-vms>
+./vm-bulk.sh <number-of-vms>
 ```
 
 *Example:*
 
 bash
-./vm-batch.sh 3
+./vm-bulk.sh 3
 
 
 Creates:
@@ -118,8 +118,9 @@ You can modify:
 To stop and undefine all vmX VMs: Note---> This will stop and delete any VM's that have a name that starts with "vm" !!!! 
 
 bash
+```
 ./vm-down.sh
-
+```
 
 ---
 

@@ -8,7 +8,10 @@ This repository provides simple Bash scripts to automate the creation, configura
 
 ### 1. vm-bringup.sh
 
-Creates and configures a single VM based on a master image.
+Creates and configures a single VM based on a master image which you should have already downloaded and positioned into /var/lib/libvirt/images/ already. All my testing here is based on using issuing the following command
+
+sudo wget -P /var/lib/libvirt/images/ https://cloud-images.ubuntu.com/releases/focal/release/ubuntu-20.04-server-cloudimg-amd64-disk-kvm.img
+
 
 *Features:*
 - Copies a master image to create a new VM disk.
@@ -27,8 +30,7 @@ bash
 bash
 ./vm-bringup.sh vm1 61.1.12.11/24 61.1.12.254 vlan.10 8.8.8.8,8.8.4.4 ubuntu mypassword -up
 
-
-> If -up is provided, the VM will be auto-defined with virsh define and started with virsh start.
+If -up is provided, the VM will be auto-defined with virsh define and started with virsh start.
 
 ---
 
